@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    .bd-border-container {
+      flex-direction: column;
+    }
+    .bd-border{
+        margin-bottom: 10px;
+    }
+  }
+  

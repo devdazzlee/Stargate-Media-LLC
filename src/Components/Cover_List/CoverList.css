@@ -1,0 +1,13 @@
+@media only screen and (max-width: 768px) {
+    .imagecardparent{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+    }
+    .img1-card{
+width: 50%;
+        height: rem;
+            }
+  }
+  

@@ -1,0 +1,63 @@
+.resource-img {
+    position: relative;
+    max-width: 605px;
+    height: 396px;
+    background-color:  #E8B551;
+    margin-right: 20px;
+}
+.image-text-container{
+    width: 80%;
+    margin: auto;
+
+}
+.image-text-container-part1{
+    width: 50%;
+}
+.image-text-container-part2{
+    width: 50%;
+} 
+@media only screen and (min-width: 768px) {
+  .image-text-container{
+    width: 100%;
+display: flex;
+justify-content: space-evenly;
+    margin: auto;
+
+}
+}
+
+/* Add these media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .image-text-container {
+      width: 90%; /* Adjust width for smaller screens */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .para-80{
+    width: 100%;
+  }
+    .image-text-container-part1,
+    .image-text-container-part2 {
+      width: 100%; /* Make both parts take full width on smaller screens */
+      text-align: center; /* Center align text content */
+    }
+  
+    .resource-img {
+      width: 100%; /* Make image take full width */
+      height: auto; /* Auto adjust height */
+      margin: 20px 0; /* Adjust margin */
+    }
+    .experince-part-image-text{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .resource-img {
+      max-width: 100%; /* Adjust max-width for smaller screens */
+    }
+  }
+  

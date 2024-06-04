@@ -1,0 +1,22 @@
+/* Mobile Styles */
+@media (max-width: 640px) {
+    .div-col {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .flex-wrap-mobile{
+display: flex;
+flex-direction: column;
+
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .flex-wrap-mobile{
+      display: flex;
+      flex-direction: column;
+      
+          }
+  }
+  

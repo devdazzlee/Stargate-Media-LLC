@@ -1,0 +1,48 @@
+.btn-company{
+    border: 1px solid #dadada;
+    padding: 2px 0px;
+    border-radius: 23px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 4px 0 rgba(26,21,21,.06);
+    margin-right: 10px;
+}
+
+.ghost-main{
+    padding: 20px 0px ;
+    width: 80%;
+    margin: auto;
+padding: 20px 0px;
+}
+.bd-border{
+    text-align: center;
+    margin-right: 10px;
+    background-color: #e8e8e8;
+    border: 1px solid #dadada;
+    color: #666;
+border-radius: 30px;
+padding: 12px 10px;
+}
+/* Add these media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .ghost-main {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  
+    .btn-company {
+      width: 100px; /* Adjust button width for smaller screens */
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .ghost-main {
+      width: 95%; /* Adjust width for even smaller screens */
+    }
+  
+    .btn-company {
+      width: 90px; /* Further adjust button width for smaller screens */
+    }
+  }
+  

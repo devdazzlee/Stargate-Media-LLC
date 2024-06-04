@@ -1,0 +1,151 @@
+.banner-bg {
+    background-image: url('../../Assets/Images/Bannner2\ \(1\).jpg');
+    position: relative;
+    background-size: cover;
+  }  
+  
+  .banner-bg-contact{
+    background-image: url('../../Assets/Images/contact-bg.webp');
+    background-size: cover;
+height: 80vh;
+width: 100%;
+display: flex;
+justify-content: center;
+  }
+  
+  .about-banner-bg{
+    background-image: url('../../Assets/Images/about-banner.webp');
+    width: 100%;
+    display: flex;
+    /* text-align: unset; */
+    margin: auto !important;
+    /* display: flex; */
+    height: 100vh;
+  }
+
+.banner-bg-bookpublishing{
+  background-image: url('../../Assets/Images/BookPublisingBanner.png');
+
+}
+  .banner-bg-pt2{
+    width: 70%;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* position: absolute; */
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  .about-banner-image1{
+    position: relative;
+width: 40%;
+  }
+  .about-banner-image2{
+    position: relative;
+    left: -20px;
+    width: 40%;
+
+  }
+  .about-banner-image3{
+    left: -50px;
+
+    position: relative;
+    width: 40%;
+
+  }
+
+
+
+
+
+  /* For tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-bg-pt2{
+display: none;
+  }
+  .about-banner-bg{
+    background-image: url('../../Assets/Images/about-banner.webp');
+    width: 100%;
+    display: flex;
+    /* text-align: unset; */
+    margin: auto !important;
+    /* display: flex; */
+height: auto;
+  }
+}
+
+/* For mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  .banner-bg-pt2{
+    display: none;
+
+  }
+  .about-banner-bg{
+    background-image: url('../../Assets/Images/about-banner.webp');
+    width: 100%;
+    display: flex;
+    /* text-align: unset; */
+    margin: auto !important;
+    /* display: flex; */
+height: auto;
+  }
+
+}
+
+  .border-inner {
+    width: 30%;
+    padding: 3px 0 7px;
+    display: inline-block;
+    text-align: center;
+    border-top: 2px dashed #D9A94C;
+    border-bottom: 2px dashed #D9A94C;
+  }
+  
+  .banner-bg-pt1 {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  
+  .para {
+    width: 70%;
+  }
+  
+
+
+    .img1-card {
+    height: 250px;
+    margin-right: 12px;
+    box-shadow: -10px 9px 22px -7px rgba(42, 38, 38, .7);
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    .banner-bg-pt1 {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .imagecardparent1{
+      display: none;
+      flex-direction: column;
+    }
+    .border-inner {
+      width: 70%;
+    }
+    .img1-card2{
+display: none;
+    }
+    .para {
+      width: 100%;
+    }
+    
+    .img1-card {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  }
+  

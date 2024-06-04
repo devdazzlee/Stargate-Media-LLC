@@ -1,0 +1,17 @@
+.resource-img2 {
+    max-width: 100%;
+    position: relative;
+    max-width: 605px;
+    height: 396px;
+    background-color:  #F5950E;
+  }
+  
+  /* Add more styles as needed */
+  .custom-list {
+    list-style-type: disc;
+  }
+  
+  .custom-list li::marker {
+    color: #F5950E; /* Change color as needed */
+  }
+  
