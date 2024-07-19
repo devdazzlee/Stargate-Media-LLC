@@ -24,9 +24,9 @@ const WorldLiterature = ({ image1, image2, title, description, buttonText, butto
             </Link>
           <a
             className='font-bold upAndDownAnimation'
-            href="tel:+17372951375"
+            href="tel:+19295399786"
           >
-            +1 (737) 295-1375
+           +1 929-539-9786
           </a>
           <Link to={'/Contact-us'} >
 

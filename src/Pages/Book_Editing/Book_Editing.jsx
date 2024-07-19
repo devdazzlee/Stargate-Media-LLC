@@ -181,9 +181,6 @@ Furthermore, our services are customized for our clients. We understand that boo
       />
 
 
-
-
-
 <WorldLiterature
       image1={img1}
       image2={img2}
@@ -199,14 +196,9 @@ Furthermore, our services are customized for our clients. We understand that boo
       content2={cardContent.content2}
       imgSrc={cardContent.imgSrc}
       listItems={cardContent.listItems}
-    />
-
-
+  />
 
 <RepeatCard2 cards={cards} heading={"Process of Book Editing"} />
-
-
-
 
 <WorldLiterature
       image1={img1}

@@ -9,30 +9,46 @@ import Bookcover_Design from './Pages/BookCover_Design/BookCover_Design';
 import Ghost_Writing from './Pages/Ghost_Writing/Ghost_Writing';
 import Book_Editing from './Pages/Book_Editing/Book_Editing';
 import Video_Book_Trailer from './Pages/VideoBook_Trailer/VideoBook_Trailer';
+import Books from './Pages/Books/Books';
+import Inner_Book from './Pages/Books/Inner_Book';
+import { CartProvider } from './Components/Context/Context';
+import Cart from './Components/Cart/Cart';
+import ScrollToTop from './Components/Scroll_Top/Scroll_Tops';
+import PaymentForm1 from './Components/PaymentForm/PaymentForm';
 
 const App = () => {
   return (
     <>
-    
-    <BrowserRouter>
+      <CartProvider>
+      <BrowserRouter>
 <Routes>
 
 <Route
       path={"/"}
       element={
-     <Home/>
+        <>
+        <ScrollToTop/>
+        <Home/>
+        </>
       }
     />
 <Route
       path={"/Contact-us"}
       element={
-     <Contact_Us/>
+
+        <>
+          <ScrollToTop/>
+          <Contact_Us/>
+        </>
       }
     />
 <Route
       path={"/About-us"}
       element={
-     <About_Us/>
+        <>
+        <ScrollToTop/>
+        <About_Us/>
+        </>
       }
     />
 
@@ -47,27 +63,39 @@ const App = () => {
 <Route
       path={"/Book-Publisihing"}
       element={
+        <>
+        <ScrollToTop/>
         <Book_Publishing/>
+        </>
       }
     />
 <Route
       path={"/Book-Marketing"}
       element={
+        <>
+        <ScrollToTop/>
         <Book_Marketing/>
+        </>
       }
     />
     
     <Route
       path={"/Book-Cover-Design"}
       element={
+        <>
+        <ScrollToTop/>
         <Bookcover_Design/>
+        </>
       }
     />
 
 <Route
       path={"/Ghost-Writing"}
       element={
+        <>
+        <ScrollToTop/>
         <Ghost_Writing/>
+        </>
       }
     />
 
@@ -75,7 +103,10 @@ const App = () => {
 <Route
       path={"/Book-Editing"}
       element={
+        <>
+        <ScrollToTop/>
         <Book_Editing/>
+        </>
       }
     />
 
@@ -83,15 +114,59 @@ const App = () => {
 <Route
       path={"/Video-Book-Trailer"}
       element={
+        <>
+        <ScrollToTop/>
         <Video_Book_Trailer/>
+        </>
+      }
+    />
+<Route
+      path={"/Books"}
+      element={
+        <>
+        <ScrollToTop/>
+        <Books/>
+        </>
+      }
+    />
+<Route
+      path={"/Books/:id"}
+      element={
+        <>
+        <ScrollToTop/>
+        <Inner_Book/>
+        </>
       }
     />
 
+<Route
+      path={"/cart"}
+      element={
+        <>
+        <ScrollToTop/>
+        <Cart/>
+        </>
+      }
+    />
+  
 
+  <Route
+      path={"/checkout"}
+      element={
+        <>
+          <ScrollToTop/>
+        <PaymentForm1/>
+        </>
+      }
+    />
 
+  
 </Routes>
     
     </BrowserRouter>
+      </CartProvider>
+
+
 
 
 

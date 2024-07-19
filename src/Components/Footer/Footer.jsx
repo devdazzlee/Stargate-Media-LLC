@@ -1,6 +1,6 @@
 import React from 'react';
 // import img1 from '../../Images'
-import logo from '../../Assets/Images/logo-1 (1).png'
+import logo from '../../Assets/Images/logo white.svg'
 import './Footer.css';
 import { Link } from 'react-router-dom';
 
@@ -82,8 +82,8 @@ function Footer() {
             <ul className="mt-4 space-y-2">
              
              <li ><i class="fa-solid fa-location-dot mr-2 "></i> Our Address</li>
-            <li>5900 Balcones Drive STE 100</li>
-            <li><i className="fa-solid fa-phone-volume mr-2 py-2"></i><a href="tel:+17372951375">+1 (737) 295-1375</a></li>
+            <li>9319 5th Avenue, Brooklyn NY 11209</li>
+            <li><i className="fa-solid fa-phone-volume mr-2 py-2"></i><a href="tel:+17372951375">+1 929-539-9786</a></li>
 <li>
   <i className="fa fa-envelope mr-2" aria-hidden="true"></i>
   <a href="mailto:contact@strgatemedia.com">contact@strgatemedia.com</a>

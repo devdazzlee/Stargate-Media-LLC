@@ -121,7 +121,7 @@
       z-index: 41;
       flex-direction: column;
       position: absolute;
-      top: 80px;
+      top: 112px;
       left: 0;
       background-color: white;
       width: 100%;
@@ -159,5 +159,33 @@
   
   .blinking-text {
     animation: blink 1.5s infinite;
+  }
+  .cartIconContainer {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .cartIcon {
+    font-size: 24px;
+  }
+  
+  .cartQuantity {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff0000; /* Red color */
+    color: white;
+    border-radius: 50%; /* Perfect circle */
+    padding: 2px 6px; /* Adjust as necessary */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the number bold */
+    line-height: 1; /* Ensure the text is vertically centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 18px; /* Ensures it is a circle */
+    height: 18px; /* Ensures it is a circle */
   }
   

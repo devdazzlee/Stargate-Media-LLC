@@ -20,7 +20,7 @@ const Struggling_to_Write = () => {
 <button type="button" class="text-white bg-black   focus:outline-none  font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Get Started</button>
 </Link>
 
-<a  className='font-bold upAndDownAnimation'  href="tel:+17372951375 " >+1 (737) 295-1375</a>
+<a  className='font-bold upAndDownAnimation'  href="tel:+19295399786" > +1 929-539-9786</a>
 <Link to={'/Contact-us'} >
 <button type="button" class="text-white bg-black   focus:outline-none  font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Live Chat</button>
 </Link>

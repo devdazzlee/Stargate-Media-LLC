@@ -3,7 +3,10 @@ import React, { useState } from 'react';
 import "./Navbar.css"; // CSS for styling
 // import img1 from '../../Images/updatedAsset 9.svg'
 import { Link  , useNavigate } from 'react-router-dom';
-import logo from '../../Assets/Images/logo-1 (1).png'
+import logo from '../../Assets/Images/Asset 1.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useCart } from '../Context/Context';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 
 const Navbar = () => {
@@ -12,7 +15,8 @@ const Navbar = () => {
     const [dropdown1, setDropdown1] = useState(false)
     const [dropdown2, setDropdown2] = useState(false)
     const [dropdown3, setDropdown3] = useState(false)
-  
+    const { totalQuantity } = useCart();
+
   const navigate = useNavigate()
   
     const toggleMobileMenu = () => {
@@ -38,7 +42,7 @@ const Navbar = () => {
      <Link  to={"/"} >
   
   
-     <img  className='h-24 w-24 md:mx-12 mx-4'  src={logo} alt="" />
+     <img  className='h-24  md:mx-12 mx-4'  src={logo} alt="" />
   
         
         
@@ -97,8 +101,7 @@ const Navbar = () => {
               </ul>
             </li>
 
-             
-
+           
             
               <Link itemprop="availability" href="https://schema.org/InStock"
                 className="navlinkhover block py-2 pl-3 pr-4 text-white rounded  md:p-0 font-bold    "
@@ -107,6 +110,15 @@ const Navbar = () => {
       Book Publishing
 
               </Link>
+
+              <Link itemprop="availability" href="https://schema.org/InStock"
+                className="navlinkhover block py-2 pl-3 pr-4 text-white rounded  md:p-0 font-bold    "
+                to={'/Books'}
+              >
+  Books
+
+              </Link>  
+
               <Link itemprop="availability" href="https://schema.org/InStock"
                 className="navlinkhover block py-2 pl-3 pr-4 text-white rounded  md:p-0 font-bold    "
                 to={'/Book-Cover-Design'}
@@ -198,6 +210,14 @@ const Navbar = () => {
 >
   <span itemprop="name">FREE CONSULTATION</span>
 </button>
+
+<Link to="/cart" className="cartIconContainer">
+  <FontAwesomeIcon icon={faCartShopping} className="cartIcon" />
+  {totalQuantity > 0 && (
+    <span className="cartQuantity">{totalQuantity}</span>
+  )}
+</Link>
+
 
   {/* </Link> */}
           </ul>

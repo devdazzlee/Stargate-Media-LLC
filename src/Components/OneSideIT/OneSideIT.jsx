@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from '../../Assets/Images/about-1.webp';
 
+
 const OneSideIT = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">

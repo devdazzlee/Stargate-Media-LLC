@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Form from '../Form/Form';
@@ -16,12 +15,30 @@ import img10 from '../../Assets/Images/PORTLast.png';
 
 import './CoverList.css'
 
-
 const Cover_List = () => {
   return (
-    <div className='imagecardparent flex mt-12 justify-center pb-12 w-3/5		m-auto'>
-<Swiper watchSlidesProgress={true} slidesPerView={5} className="mySwiper"  autoplay={true}>
-        <SwiperSlide>  <img className='img1-card' src={img1} alt="" /></SwiperSlide>
+    <div className='imagecardparent flex mt-12 justify-center pb-12 w-4/5 m-auto'>
+      <Swiper
+        watchSlidesProgress={true}
+        slidesPerView={1} // Default to 1 slide per view
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        }}
+        className="mySwiper"
+        autoplay={true}
+      >
+        <SwiperSlide><img className='img1-card' src={img1} alt="" /></SwiperSlide>
         <SwiperSlide><img className='img1-card' src={img2} alt="" /></SwiperSlide>
         <SwiperSlide><img className='img1-card' src={img4} alt="" /></SwiperSlide>
         <SwiperSlide><img className='img1-card' src={img5} alt="" /></SwiperSlide>
@@ -31,8 +48,8 @@ const Cover_List = () => {
         <SwiperSlide><img className='img1-card' src={img9} alt="" /></SwiperSlide>
         <SwiperSlide><img className='img1-card' src={img10} alt="" /></SwiperSlide>
       </Swiper>
-      </div>
+    </div>
   )
 }
 
-export default Cover_List
+export default Cover_List;
