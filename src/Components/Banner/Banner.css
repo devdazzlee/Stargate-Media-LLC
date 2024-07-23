@@ -3,7 +3,7 @@
     position: relative;
     background-size: cover;
   }  
-  
+ 
   .banner-bg-contact{
     background-image: url('../../Assets/Images/contact-bg.webp');
     background-size: cover;
@@ -124,17 +124,28 @@ height: auto;
   
   /* Media Queries */
   @media only screen and (max-width: 768px) {
+.text-color-white{
+  color: white !important;
+}
+    .banner-bg {
+      background-image: url('./../../Assets/Images/BookPublisingBanner.png');
+      position: relative;
+      background-size: cover;
+    }  
+   
     .banner-bg-pt1 {
       flex-direction: column;
       align-items: center;
       width: 100%;
+      padding: 11px;
     }
     .imagecardparent1{
       display: none;
       flex-direction: column;
     }
     .border-inner {
-      width: 70%;
+      width: 100%;
+   margin: auto;
     }
     .img1-card2{
 display: none;

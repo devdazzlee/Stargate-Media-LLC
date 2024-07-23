@@ -13,7 +13,7 @@ const Banner = () => {
     <div className='banner-bg pt-16'>
       <div className='banner-bg-pt1'>
         <div>
-          <div className='border-inner'>
+          <div className='border-inner flex justify-center'>
             <div className='flex justify-center'>
               <i style={{ color: '#F5950E' }} className="fa-solid fa-star"></i>
               <i style={{ color: '#F5950E' }} className="fa-solid fa-star"></i>
@@ -21,11 +21,18 @@ const Banner = () => {
               <i style={{ color: '#F5950E' }} className="fa-solid fa-star"></i>
               <i style={{ color: '#F5950E' }} className="fa-solid fa-star"></i>
             </div>
-            <span className='font-semibold' >100% Satisfaction Guaranteed</span>
+            <span className='font-semibold  text-color-white' >100% Satisfaction Guaranteed</span>
           </div>
           <div>
-            <h1 className='text-4xl font-bold mb-2 '>Find a Ghostwriter for <br /> Your Next Book. <br />Hire a Stargate Media Now!</h1>
-            <p className='para  text-xl text-black font-semibold'>Are you looking to hire a ghostwriter to write a book? Trust our professional ghostwriter with your story. Let our ghostwriters stir our magical cauldron of powerful words to bring you an elixir in the form of an ingenious book.</p>
+          <h1 className="text-2xl md:text-4xl font-bold mb-2 text-center md:text-left  text-color-white">
+  Find a Ghostwriter for <br className="hidden md:block" />
+  Your Next Book. <br className="hidden md:block" />
+  Hire a Stargate Media Now!
+</h1>
+<p className="text-base md:text-xl text-black font-semibold text-center md:text-left  text-color-white">
+  Are you looking to hire a ghostwriter to write a book? Trust our professional ghostwriter with your story. Let our ghostwriters stir our magical cauldron of powerful words to bring you an elixir in the form of an ingenious book.
+</p>
+
           </div>
         </div>
         <div>

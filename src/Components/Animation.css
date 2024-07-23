@@ -57,6 +57,5 @@
   
   /* Apply the animation to the element */
   .upAndDownAnimation {
-    animation: upAndDown 2s infinite; /* 2s duration, infinite loop */
-    display: inline-block; /* Ensure it only takes the necessary space */
+margin-bottom: 10px;
   }
